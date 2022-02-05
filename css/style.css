@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* global */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-style: normal;
+}
+
+.container{
+    max-width: 122.6rem;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 8rem;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+/* HEADER */
+
+.site-header {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo-link {
+    margin-right: 8rem;
+    padding: 2rem 0;
+}
+
+.sitenav-list {
+    display: flex;
+    align-items: center;
+    margin-right: 8rem;
+}
+
+.sitenav-item {
+    list-style: none;
+    
+}
+
+.sitenav-item:not(:last-child){
+    margin-right: 4rem;
+}
+
+.sitenav-link {
+    text-decoration: none;
+    display: flex;
+    line-height: 2.109rem;
+    color: rgba(31, 46, 53, 0.8);
+    transition: 0.3s;
+}
+
+.sitenav-link:hover{
+    color:#EE4248;
+}
+
+.site-icons-nav {
+    display: flex;
+}
+
+.site-icons {
+    width: 2rem;
+    height: 1.859rem;
+    cursor: pointer;
+}
+
+.site-icons:not(:last-child){
+    margin-right: 2.4rem;
+}
+
+.sitenav-item-icon{
+    margin-left: 0.8rem;
+}
+
+.details-icons-nav{
+    display: none;
+}
+
+.site-menu-link {
+    display: none;
+}
+.site-menu {
+
+}
+
+/* /HEADER */
+
+
+/* HERO */
+
+.hero {
+    width: 100%;
+}
+
+.hero-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 11rem;
+    padding-bottom: 16.2rem;
+}
+
+hero-action-wrapper{
+    width: 100%;
+    margin-right: 1.7rem;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.417rem;
+    color: #1F2E35;
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+}
+
+.hero-subtitle {
+    color:#EE4248;
+}
+
+.hero-text {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    color: #30444E;
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+}
+
+.hero-img {
+    display: block;
+    width: 56.297rem;
+    height: 38.161rem;
+}
+
+
+.main-button {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    color: #FFFFFF;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+}
+
+.hero-button {
+    display: inline-block;
+    background:#EE4248;
+    padding: 1.2rem 3.2rem;
+
+    
+}
+
+.main-button:hover{
+    font-size: 1.9rem;
+}
+
+
+/* /HERO */
+
+
+/* FEATURES */
+
+.features {
+    background:#F6F6F6;
+}
+
+.features-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 5.7rem;
+    padding-bottom: 6.3rem;
+}
+
+.features-img {
+    width: 452.94px;
+    height: 472px;
+    margin-right: 8.206rem;
+}
+
+.img{
+    display: none;
+}
+
+.features-title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.278rem;
+    color: #1F2E35;
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+}
+
+.features-subtitle {
+    color: #EE4248;
+}
+
+.features-text {
+    font-weight: 500;
+    color: #30444E;
+}
+
+.features-text:not(:last-child){
+    margin-bottom: 2.4rem;
+}
+
+.features-text span{
+    color: #EE4248;
+}
+
+/* /FEATURES */
+
+
+/* SERVICES */
+
+.services {
+    margin-top: 9.6rem;
+    margin-bottom: 11rem;
+    
+}
+
+.services-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.services-heading {
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: #1F2E35;
+    line-height: 4.278rem;
+    margin-top: 2rem;
+    margin-bottom: 4.27rem;
+    text-align: center;
+}
+
+.product {
+    margin-right: 5.3rem;
+}
+
+.services-img {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.services-title {
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: #EE4248;
+    line-height: 3.743rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.services-text {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color:#30444E;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.product-button {
+    background-color:#5042EE;
+}
+
+.service {
+    margin-right: 4.3rem;
+}
+
+.service-button {
+    background-color: #EE42A9;
+}
+
+.technology-button {
+    background-color:#FEBA08;
+}
+
+/* DETAILS */
+
+.details {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+}
+
+.details-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.details-left {
+    margin-right: 4.7rem;
+}
+
+.footer-logo-link{
+    margin-bottom: 1rem;
+    
+}
+
+.footer-logo{
+    padding-top: 2.8rem;
+}
+
+.details-left-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #263238;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.details-text {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.685rem;
+    color:#263238;
+}
+
+.details-right {
+    margin-right: 7rem;
+}
+
+.details-right-title {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #263238;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* /DETAILS */
+
+/* FOOTER */
+
+.site-footer {
+    background-color:#EE4248;
+}
+.site-footer-text {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #FFFFFF;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    text-align: center;
+}
+
+.site-footer-text a{
+    text-decoration: none;
+    color: #FEBA08;
+}
+
+/* /FOOTER */
+
+/* MEDIA */
+
+@media (max-width:1115px) {
+
+    .site-icons-nav{
+        display: none;
+    }
+
+    .details-icons{
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 3.2rem;
+        cursor: pointer;
+    }
+
+    .hero-action-wrapper{
+        margin-bottom: 4rem;
+    }
+}
+
+
+@media (max-width:1025px) {
+    .hero-wrapper{
+        display: block;
+    }
+
+    .hero-title{
+        text-align: center;
+    }
+
+    .hero-text{
+        text-align: center;
+    }
+
+    .hero-button{
+        display: none;
+    }
+    
+    .hero-img{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .features-wrapper{
+        display: block;
+    }
+
+    .features-title{
+        text-align: center;
+    }
+
+    .features-text{
+        width: 70%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .features-img{
+        display: none;
+    }
+
+    .img{
+        display: block;
+        width: 30rem;
+        height: 30rem;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width:996px) {
+
+    .container{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+
+    .hero-wrapper{
+        padding-bottom: 10rem;
+    }
+
+    .hero-img{
+        width: 35rem;
+        height: 30rem;
+    }
+    
+
+    .sitenav-list{
+        margin: 0;
+    }
+
+    .delete-item{
+        display: none;
+    }
+
+    .services-container{
+        text-align: center;
+    }
+
+    .icons-nav{
+        display: none;
+    }
+}
+
+
+@media (max-width:676px) {
+    .product{
+        margin-bottom: 4rem;
+    }
+
+    .service{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width:610px) {
+    .sitenav-list{
+        display: none;
+    }
+
+    .site-menu-link{
+        display: inline-block;
+    }
+
+    .details-wrapper{
+        display: block;
+    }
+
+    .footer-logo-link{
+        margin-bottom: 3.2rem;
+    }
+
+    .details-left{
+        margin-bottom: 4rem;
+    }
+
+    .hero-wrapper{
+        padding-bottom: 8rem;
+    }
+
+    .hero-title{
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .features-title{
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .services-heading {
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+
+    .hero-img{
+        width: 25rem;
+        height: 20rem;
+    }
+
+    .img{
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .product{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .service{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
